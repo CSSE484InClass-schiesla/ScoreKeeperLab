@@ -12,6 +12,9 @@
 		0A66C3C12052E02D00958B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3BF2052E02D00958B2A /* Main.storyboard */; };
 		0A66C3C32052E02D00958B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3C22052E02D00958B2A /* Assets.xcassets */; };
 		0A66C3C62052E02D00958B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3C42052E02D00958B2A /* LaunchScreen.storyboard */; };
+		0A66C3D020557D7D00958B2A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CD20557D7C00958B2A /* Icon.png */; };
+		0A66C3D120557D7D00958B2A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CE20557D7C00958B2A /* Icon@2x.png */; };
+		0A66C3D220557D7D00958B2A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CF20557D7D00958B2A /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0A66C3C22052E02D00958B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A66C3C52052E02D00958B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A66C3C72052E02D00958B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A66C3CD20557D7C00958B2A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A66C3CE20557D7C00958B2A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0A66C3CF20557D7D00958B2A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		0A66C3BA2052E02D00958B2A /* ScoreKeeperLab */ = {
 			isa = PBXGroup;
 			children = (
+				0A66C3CF20557D7D00958B2A /* Icon-72.png */,
+				0A66C3CD20557D7C00958B2A /* Icon.png */,
+				0A66C3CE20557D7C00958B2A /* Icon@2x.png */,
 				0A66C3BB2052E02D00958B2A /* AppDelegate.swift */,
 				0A66C3BD2052E02D00958B2A /* ViewController.swift */,
 				0A66C3BF2052E02D00958B2A /* Main.storyboard */,
@@ -123,9 +132,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A66C3D020557D7D00958B2A /* Icon.png in Resources */,
 				0A66C3C62052E02D00958B2A /* LaunchScreen.storyboard in Resources */,
 				0A66C3C32052E02D00958B2A /* Assets.xcassets in Resources */,
 				0A66C3C12052E02D00958B2A /* Main.storyboard in Resources */,
+				0A66C3D120557D7D00958B2A /* Icon@2x.png in Resources */,
+				0A66C3D220557D7D00958B2A /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,23 +22,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4d9-OH-17F" userLabel="Top">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-pZ-uzZ">
-                                        <rect key="frame" x="51" y="64" width="86" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="New Game"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-hP-2Su">
-                                        <rect key="frame" x="233" y="64" width="96" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Enter Round"/>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Round 0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-6d-vsI">
-                                        <rect key="frame" x="145" y="18" width="84" height="43"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Round 0" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-6d-vsI">
+                                        <rect key="frame" x="145" y="13" width="84" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-pZ-uzZ">
+                                        <rect key="frame" x="54" y="64" width="75" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="New Game"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-hP-2Su">
+                                        <rect key="frame" x="243" y="64" width="85" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Enter Round"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -95,48 +95,104 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-GO-Gvn">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="473"/>
-                                                <color key="backgroundColor" red="1" green="0.42016655359999999" blue="0.27005722609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xo-c1-slN">
+                                                        <rect key="frame" x="8" y="8" width="64" height="457"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1xo-c1-slN" secondAttribute="bottom" constant="8" id="YNR-jP-j2D"/>
+                                                    <constraint firstItem="1xo-c1-slN" firstAttribute="leading" secondItem="Bm3-GO-Gvn" secondAttribute="leading" constant="8" id="ZQK-mh-7Ug"/>
+                                                    <constraint firstItem="1xo-c1-slN" firstAttribute="top" secondItem="Bm3-GO-Gvn" secondAttribute="top" constant="8" id="hOX-ds-tj7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1xo-c1-slN" secondAttribute="trailing" constant="8" id="rZC-5X-Uva"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwr-rM-ISb">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="473"/>
-                                                <color key="backgroundColor" red="0.1661241319" green="1" blue="0.073269314239999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-nC-vKw">
+                                                        <rect key="frame" x="8" y="8" width="64" height="457"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="lSb-nC-vKw" firstAttribute="leading" secondItem="dwr-rM-ISb" secondAttribute="leading" constant="8" id="FAb-8O-fYN"/>
+                                                    <constraint firstItem="lSb-nC-vKw" firstAttribute="top" secondItem="dwr-rM-ISb" secondAttribute="top" constant="8" id="FUi-5d-c04"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lSb-nC-vKw" secondAttribute="trailing" constant="8" id="c1Y-t9-3uM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lSb-nC-vKw" secondAttribute="bottom" constant="8" id="jsk-ZP-8ib"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6N-FE-Cfv">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="473"/>
-                                                <color key="backgroundColor" red="1" green="0.42016655359999999" blue="0.27005722609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8B-NC-Txv">
+                                                        <rect key="frame" x="8" y="8" width="64" height="457"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Q8B-NC-Txv" firstAttribute="top" secondItem="S6N-FE-Cfv" secondAttribute="top" constant="8" id="1GT-y1-SBp"/>
+                                                    <constraint firstItem="Q8B-NC-Txv" firstAttribute="leading" secondItem="S6N-FE-Cfv" secondAttribute="leading" constant="8" id="5DK-cl-lfJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q8B-NC-Txv" secondAttribute="trailing" constant="8" id="Bab-Rh-Ou2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Q8B-NC-Txv" secondAttribute="bottom" constant="8" id="PBv-zZ-CE4"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Jl-6X-j11">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="473"/>
-                                                <color key="backgroundColor" red="0.1661241319" green="1" blue="0.073269314239999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="0" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erD-gF-6Xv">
+                                                        <rect key="frame" x="8" y="8" width="64" height="457"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="erD-gF-6Xv" firstAttribute="leading" secondItem="5Jl-6X-j11" secondAttribute="leading" constant="8" id="2He-jr-Izf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="erD-gF-6Xv" secondAttribute="bottom" constant="8" id="2c5-sp-FLO"/>
+                                                    <constraint firstItem="erD-gF-6Xv" firstAttribute="top" secondItem="5Jl-6X-j11" secondAttribute="top" constant="8" id="NjS-kj-vfc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="erD-gF-6Xv" secondAttribute="trailing" constant="8" id="c7r-4C-W5X"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-rV-bjB">
                                         <rect key="frame" x="5" y="10" width="365" height="25"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-az-LGr">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-az-LGr">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BcQ-ye-OS3">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BcQ-ye-OS3">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="25"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hqi-Cr-a6H">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hqi-Cr-a6H">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="25"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-dG-dbI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-dG-dbI">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="25"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -178,6 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="58.920539730134934"/>
         </scene>
     </scenes>
 </document>
