@@ -22,23 +22,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4d9-OH-17F" userLabel="Top">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Round 0" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-6d-vsI">
-                                        <rect key="frame" x="145" y="13" width="84" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-pZ-uzZ">
                                         <rect key="frame" x="54" y="64" width="75" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="pressedNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLB-HM-x6c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-hP-2Su">
                                         <rect key="frame" x="243" y="64" width="85" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Enter Round"/>
+                                        <connections>
+                                            <action selector="pressedEnterRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POO-LJ-h3X"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSU-tr-vvV">
+                                        <rect key="frame" x="155" y="20" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -231,6 +237,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="player1ScoreTextField" destination="x8F-az-LGr" id="T3p-zC-wFX"/>
+                        <outlet property="player1ScoresTextView" destination="1xo-c1-slN" id="Brj-lg-8Uh"/>
+                        <outlet property="player2ScoreTextField" destination="BcQ-ye-OS3" id="nnk-nU-Myi"/>
+                        <outlet property="player2ScoresTextView" destination="lSb-nC-vKw" id="gnP-Yx-Auv"/>
+                        <outlet property="player3ScoreTextField" destination="hqi-Cr-a6H" id="H1e-q5-Mpc"/>
+                        <outlet property="player3ScoresTextView" destination="Q8B-NC-Txv" id="JnA-S3-7cO"/>
+                        <outlet property="player4ScoreTextField" destination="WpX-dG-dbI" id="OrO-CC-gYu"/>
+                        <outlet property="player4ScoresTextView" destination="erD-gF-6Xv" id="fdy-Ul-oaY"/>
+                        <outlet property="roundLabel" destination="hSU-tr-vvV" id="9AJ-fd-kX0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
