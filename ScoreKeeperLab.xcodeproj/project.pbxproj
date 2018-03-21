@@ -15,6 +15,7 @@
 		0A66C3D020557D7D00958B2A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CD20557D7C00958B2A /* Icon.png */; };
 		0A66C3D120557D7D00958B2A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CE20557D7C00958B2A /* Icon@2x.png */; };
 		0A66C3D220557D7D00958B2A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A66C3CF20557D7D00958B2A /* Icon-72.png */; };
+		0AA49DE62062FCB30063C6BA /* ScoreKeeperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA49DE52062FCB30063C6BA /* ScoreKeeperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		0A66C3CD20557D7C00958B2A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		0A66C3CE20557D7C00958B2A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0A66C3CF20557D7D00958B2A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		0AA49DE32062FCB30063C6BA /* ScoreKeeperLab-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoreKeeperLab-Bridging-Header.h"; sourceTree = "<group>"; };
+		0AA49DE42062FCB30063C6BA /* ScoreKeeperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeperViewController.h; sourceTree = "<group>"; };
+		0AA49DE52062FCB30063C6BA /* ScoreKeeperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,12 @@
 				0A66C3BB2052E02D00958B2A /* AppDelegate.swift */,
 				0A66C3BD2052E02D00958B2A /* ViewController.swift */,
 				0A66C3BF2052E02D00958B2A /* Main.storyboard */,
+				0AA49DE42062FCB30063C6BA /* ScoreKeeperViewController.h */,
+				0AA49DE52062FCB30063C6BA /* ScoreKeeperViewController.m */,
 				0A66C3C22052E02D00958B2A /* Assets.xcassets */,
 				0A66C3C42052E02D00958B2A /* LaunchScreen.storyboard */,
 				0A66C3C72052E02D00958B2A /* Info.plist */,
+				0AA49DE32062FCB30063C6BA /* ScoreKeeperLab-Bridging-Header.h */,
 			);
 			path = ScoreKeeperLab;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				TargetAttributes = {
 					0A66C3B72052E02D00958B2A = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +158,7 @@
 			files = (
 				0A66C3BE2052E02D00958B2A /* ViewController.swift in Sources */,
 				0A66C3BC2052E02D00958B2A /* AppDelegate.swift in Sources */,
+				0AA49DE62062FCB30063C6BA /* ScoreKeeperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScoreKeeperLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rosehulman.schiesla.ScoreKeeperLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScoreKeeperLab/ScoreKeeperLab-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,11 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScoreKeeperLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rosehulman.schiesla.ScoreKeeperLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScoreKeeperLab/ScoreKeeperLab-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

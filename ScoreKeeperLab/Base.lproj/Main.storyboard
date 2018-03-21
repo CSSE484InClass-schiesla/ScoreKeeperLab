@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Score Keeper View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScoreKeeperLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ScoreKeeperViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,14 +29,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="132.5" height="30"/>
                                                 <state key="normal" title="New Game"/>
                                                 <connections>
-                                                    <action selector="pressedNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLB-HM-x6c"/>
+                                                    <action selector="pressedNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67e-KB-yA4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-hP-2Su">
                                                 <rect key="frame" x="182.5" y="0.0" width="132.5" height="30"/>
                                                 <state key="normal" title="Enter Round"/>
                                                 <connections>
-                                                    <action selector="pressedEnterRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POO-LJ-h3X"/>
+                                                    <action selector="pressedEnterRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnK-gs-BOu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -248,15 +248,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="player1ScoreTextField" destination="x8F-az-LGr" id="T3p-zC-wFX"/>
-                        <outlet property="player1ScoresTextView" destination="1xo-c1-slN" id="Brj-lg-8Uh"/>
-                        <outlet property="player2ScoreTextField" destination="BcQ-ye-OS3" id="nnk-nU-Myi"/>
-                        <outlet property="player2ScoresTextView" destination="lSb-nC-vKw" id="gnP-Yx-Auv"/>
-                        <outlet property="player3ScoreTextField" destination="hqi-Cr-a6H" id="H1e-q5-Mpc"/>
-                        <outlet property="player3ScoresTextView" destination="Q8B-NC-Txv" id="JnA-S3-7cO"/>
-                        <outlet property="player4ScoreTextField" destination="WpX-dG-dbI" id="OrO-CC-gYu"/>
-                        <outlet property="player4ScoresTextView" destination="erD-gF-6Xv" id="fdy-Ul-oaY"/>
-                        <outlet property="roundLabel" destination="hSU-tr-vvV" id="9AJ-fd-kX0"/>
+                        <outlet property="RoundLabel" destination="hSU-tr-vvV" id="3yG-qM-lMq"/>
+                        <outlet property="playerFourScore" destination="WpX-dG-dbI" id="sf4-cD-2ZH"/>
+                        <outlet property="playerFourTextView" destination="erD-gF-6Xv" id="9cJ-zh-1cE"/>
+                        <outlet property="playerOneScore" destination="x8F-az-LGr" id="cid-xh-D7p"/>
+                        <outlet property="playerOneTextView" destination="1xo-c1-slN" id="Ic7-Pq-y3A"/>
+                        <outlet property="playerThreeScore" destination="hqi-Cr-a6H" id="0lE-ja-3Wa"/>
+                        <outlet property="playerThreeTextView" destination="Q8B-NC-Txv" id="ajc-tI-Cgd"/>
+                        <outlet property="playerTwoScore" destination="BcQ-ye-OS3" id="NL1-2A-gkI"/>
+                        <outlet property="playerTwoTextView" destination="lSb-nC-vKw" id="xwk-Sa-zlY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
